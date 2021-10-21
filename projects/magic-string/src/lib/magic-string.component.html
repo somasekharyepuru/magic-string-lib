@@ -1,0 +1,7 @@
+<input type="text" name="search" id="search" (keydown.enter)="mask($event)">
+
+<div class="original-content" [hidden]="true" #content>
+  <ng-content></ng-content>
+</div>
+
+<div class="projectedContent" [innerHTML]="projectedContent" ></div>
